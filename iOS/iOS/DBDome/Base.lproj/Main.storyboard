@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVx-PP-Vxv">
+                                <rect key="frame" x="96.666666666666686" y="351" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="a3X-Zn-NY5"/>
+                                    <constraint firstAttribute="width" constant="200" id="qqJ-G6-kQi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="开启声音引擎">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="engineClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQ7-L7-HT5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-7w-FCJ">
+                                <rect key="frame" x="96.666666666666686" y="451" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EEk-Wn-U7a"/>
+                                    <constraint firstAttribute="height" constant="50" id="rI6-0P-8tD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="选择音色">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="speakerClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8s-HP-eht"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="vtC-7h-Sny">
+                                <rect key="frame" x="160.66666666666666" y="206" width="72" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="RXE-sf-xSB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="Swx-iM-BhU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="ppq-ZG-K8G"/>
+                                    <constraint firstAttribute="height" constant="85" id="uKQ-n1-XeY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="vtC-7h-Sny" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dz4-ZQ-aQy"/>
+                            <constraint firstItem="jVx-PP-Vxv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="Hwx-JI-B20"/>
+                            <constraint firstItem="Ggf-7w-FCJ" firstAttribute="top" secondItem="jVx-PP-Vxv" secondAttribute="bottom" constant="50" id="Kc3-KN-FpU"/>
+                            <constraint firstItem="jVx-PP-Vxv" firstAttribute="top" secondItem="vtC-7h-Sny" secondAttribute="bottom" constant="60" id="eQD-ol-wXu"/>
+                            <constraint firstItem="jVx-PP-Vxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lRt-hX-Ivz"/>
+                            <constraint firstItem="Ggf-7w-FCJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yU6-Iw-e9X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enginebtn" destination="jVx-PP-Vxv" id="9U5-3X-bb6"/>
+                        <outlet property="speakerbtn" destination="Ggf-7w-FCJ" id="YdP-Aa-PJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="72" height="85.666664123535156"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

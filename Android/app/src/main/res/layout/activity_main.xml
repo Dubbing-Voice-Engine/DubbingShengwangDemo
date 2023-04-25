@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:lines="3"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRoom"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:text="房间ID："
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvState" />
+
+        <EditText
+            android:id="@+id/etRoom"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvRoom"
+            app:layout_constraintLeft_toRightOf="@id/tvRoom" />
+
+        <TextView
+            android:id="@+id/tvJoinRoom"
+            style="@style/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="进入房间"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvLeaveRoom"
+            app:layout_constraintTop_toBottomOf="@id/etRoom" />
+
+        <TextView
+            android:id="@+id/tvLeaveRoom"
+            style="@style/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="离开房间"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvJoinRoom"
+            app:layout_constraintLeft_toRightOf="@id/tvJoinRoom"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStartVC"
+            style="@style/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="开始变声"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvStopVC"
+            app:layout_constraintTop_toBottomOf="@id/tvLeaveRoom" />
+
+        <TextView
+            android:id="@+id/tvStopVC"
+            style="@style/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="停止变声"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvStartVC"
+            app:layout_constraintLeft_toRightOf="@id/tvStartVC"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEnable"
+            style="@style/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="启用插件"
+            app:layout_constraintLeft_toLeftOf="@id/tvStartVC"
+            app:layout_constraintTop_toBottomOf="@id/tvStopVC" />
+
+        <TextView
+            android:id="@+id/tvDisable"
+            style="@style/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="禁用插件"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvEnable"
+            app:layout_constraintLeft_toRightOf="@id/tvEnable"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSet"
+            style="@style/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick"
+            android:text="设置音色"
+            app:layout_constraintLeft_toLeftOf="@id/tvStartVC"
+            app:layout_constraintTop_toBottomOf="@id/tvEnable" />
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="点击音色进行设置"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvSet" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTip" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
