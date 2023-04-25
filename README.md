@@ -22,7 +22,7 @@
 ### iOS
 
 准备工作
-* 在此链接下载所需资源：https://halo-assets-su.gerzz.com/vcdemo/resources.zip * 导入项目DBDome中
+* 在此链接下载所需资源：https://halo-assets-su.gerzz.com/vcdemo/resources.zip * 导入项目DBDemo中
 * pod install
 * 在ViewController中填写你的appId、uid、channelId，声网token
 * 项目导入libc++库
