@@ -1,11 +1,3 @@
-----------------------------------------------模版使用步骤--------------------------------------------------------
-
-1. 在 Markdown 编辑器里打开模版，推荐 Typora、VSCode。
-2. 先搜索“”，全部替换成你的插件名称。
-3. 再搜索“TODO”，按照对应说明依次修改。**修改后注意不要保留括号**。
-4. 检查全文内容和样式。注意没有标 TODO 的内容由声网维护，**建议不要随意修改**。模版样式的最终效果参见[示例文档](https://docs.agora.io/cn/extension_customer/quickstart_faceunity?platform=Android)。
-
-----------------------------------------------以下为模版正文-----------------------------------------------------
 
 # 使用大饼AI变声插件
 
@@ -62,7 +54,7 @@
   ```
 3. 在 Xcode 中打开项目`。
 4. 打开ViewController`，进行如下修改：
-
+  ```
   NSString * appId = @"";
   NSString * token = @"";
   NSString * channelId = @"";
@@ -131,11 +123,11 @@
             mRtcEngine.enableAudio()
   ```
 ### 3. 准备引擎资源
-          获取license文件、音色文件、模型文件。通过以下代码获取资源文件夹。
-          ```Kotlin
-          val modelPath: String = "${context.filesDir}${File.separator}vc_model"
-          ```
-          下载资源文件并放入此目录。
+  获取license文件、音色文件、模型文件。通过以下代码获取资源文件夹。
+  ```Kotlin
+  val modelPath: String = "${context.filesDir}${File.separator}vc_model"
+  ```
+  下载资源文件并放入此目录。
 ### 4. 获取音色列表
   ```Kotlin
       val speakerList = mRtcEngine.getExtensionProperty(
