@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     private val EXTENSION_AUDIO_FILTER = "DubbingVC"
 
     private val changeSpeaker_ = "changeSpeaker"
-    private val starRealTimeTranscribe_ = "starRealTimeTranscribe"
+    private val startRealTimeTranscribe_ = "startRealTimeTranscribe"
     private val stopRealTimeTranscribe_ = "stopRealTimeTranscribe"
     private val getSpeakersInfo_ = "getSpeakersInfo"
 
@@ -148,7 +148,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         when (p0?.id) {
             R.id.tvEnable -> enableDubbingVC(true)
             R.id.tvDisable -> enableDubbingVC(false)
-            R.id.tvStartVC -> setDubbingVCProperty(starRealTimeTranscribe_, "true")
+            R.id.tvStartVC -> setDubbingVCProperty(startRealTimeTranscribe_, "true")
             R.id.tvStopVC -> setDubbingVCProperty(stopRealTimeTranscribe_, "true")
             R.id.tvLeaveRoom -> mRtcEngine.leaveChannel()
             R.id.tvJoinRoom -> requestAudioPermission()
