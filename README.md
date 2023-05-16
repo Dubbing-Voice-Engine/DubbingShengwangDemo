@@ -4,7 +4,7 @@
 ### Android
 
 准备工作
-* 在此链接下载所需资源：https://halo-assets-su.gerzz.com/vcdemo/resources.zip
+* 在此链接下载所需资源：https://v.dubbing.tech/vc-plug/licenses.zip
 * 获取你的声网appId、userId、声网token、房间id，填入MainActivity对应变量。
 * 运行demo，此时设备上会生成应用目录。
 * 通过Android Studio的DeviceFileExplorer，找到data/data/com.gerzz.demo/files目录，并在此目录下新建vc_model目录。
@@ -22,7 +22,7 @@
 ### iOS
 
 准备工作
-* 在此链接下载所需资源：https://halo-assets-su.gerzz.com/vcdemo/resources.zip * 导入项目DBDemo中
+* 在此链接下载所需资源：https://v.dubbing.tech/vc-plug/licenses.zip * 导入项目DBDemo中
 * pod install
 * 在ViewController中填写你的appId、uid、channelId，声网token
 * 项目导入libc++库
