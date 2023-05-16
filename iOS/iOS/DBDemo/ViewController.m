@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  DBDemo
+//  DBDome
 //
-//  Created by 杜改革 on 2023/5/12.
+//  Created by 杜改革 on 2023/4/20.
 //
 
 #import "ViewController.h"
 #import <AgoraRtcKit/AgoraRtcKit.h>
-#import <MyFuckingPowerFilter/EngineFilterManager.h>
+#import <DubbingRtvcFilter/EngineFilterManager.h>
 
 NSString * appId = @"3bc48e73d34d4617b3a48a3a2db3504e";
 NSString * token = @"0063bc48e73d34d4617b3a48a3a2db3504eIACVZdWppa8qVPDsg1TpJggn507rOolNmbexLLSAZO/dV6TPDnrhY8/4HAAm6/oEKUpDZAMAAQApSkNkAgApSkNkBAApSkNk";
@@ -22,13 +22,13 @@ int uid = 201520;
 @property (strong, nonatomic) NSString * currSpeakerId;
 @property (strong, nonatomic) NSString * currSpeakerName;
 @property (strong, nonatomic) NSArray * speakerArray;
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     AgoraRtcEngineConfig *cfg = [[AgoraRtcEngineConfig alloc] init];
     cfg.appId = appId;
     cfg.eventDelegate = self;
@@ -94,6 +94,4 @@ int uid = 201520;
     NSLog(@"setExtensionPropertyWithVendor -> %d", ret);
     [self.speakerbtn setTitle:_currSpeakerName forState: 0];
 }
-
-
 @end
