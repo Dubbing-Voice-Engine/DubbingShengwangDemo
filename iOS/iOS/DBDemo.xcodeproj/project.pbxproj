@@ -21,6 +21,7 @@
 		14B89D352A0E183C0031EBBC /* paramA in Resources */ = {isa = PBXBuildFile; fileRef = 14B89D2F2A0E183C0031EBBC /* paramA */; };
 		14B89D362A0E183C0031EBBC /* f.dat in Resources */ = {isa = PBXBuildFile; fileRef = 14B89D302A0E183C0031EBBC /* f.dat */; };
 		14B89D372A0E185C0031EBBC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B89D292A0E17CA0031EBBC /* libc++.tbd */; };
+		9F453BCF2A41CCA1001C7E40 /* DubbingRtvcFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F453BCE2A41CCA1001C7E40 /* DubbingRtvcFilter.framework */; };
 		CDEB067A35DD8437FE3F5BDB /* Pods_DBDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A516F86FEAE14A096E30D2 /* Pods_DBDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		14B89D2F2A0E183C0031EBBC /* paramA */ = {isa = PBXFileReference; lastKnownFileType = text; path = paramA; sourceTree = "<group>"; };
 		14B89D302A0E183C0031EBBC /* f.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = f.dat; sourceTree = "<group>"; };
 		3EF2F4D490FDA5A315E1A78C /* Pods-DBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDemo.debug.xcconfig"; path = "Target Support Files/Pods-DBDemo/Pods-DBDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F453BCE2A41CCA1001C7E40 /* DubbingRtvcFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DubbingRtvcFilter.framework; sourceTree = "<group>"; };
 		F6A516F86FEAE14A096E30D2 /* Pods_DBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE30D419541D9A07B0BA0DBE /* Pods-DBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDemo.release.xcconfig"; path = "Target Support Files/Pods-DBDemo/Pods-DBDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F453BCF2A41CCA1001C7E40 /* DubbingRtvcFilter.framework in Frameworks */,
 				14B89D372A0E185C0031EBBC /* libc++.tbd in Frameworks */,
 				CDEB067A35DD8437FE3F5BDB /* Pods_DBDemo.framework in Frameworks */,
 			);
@@ -83,6 +86,7 @@
 		14B89D0D2A0E15F30031EBBC /* DBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F453BCE2A41CCA1001C7E40 /* DubbingRtvcFilter.framework */,
 				14B89D2A2A0E183C0031EBBC /* Resources */,
 				14B89D0E2A0E15F30031EBBC /* AppDelegate.h */,
 				14B89D0F2A0E15F30031EBBC /* AppDelegate.m */,
