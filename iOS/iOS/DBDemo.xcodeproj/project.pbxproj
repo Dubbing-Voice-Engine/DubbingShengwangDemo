@@ -14,7 +14,6 @@
 		14B89D1B2A0E15F50031EBBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B89D1A2A0E15F50031EBBC /* Assets.xcassets */; };
 		14B89D1E2A0E15F50031EBBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B89D1C2A0E15F50031EBBC /* LaunchScreen.storyboard */; };
 		14B89D212A0E15F50031EBBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B89D202A0E15F50031EBBC /* main.m */; };
-		14B89D282A0E176D0031EBBC /* MyFuckingPowerFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B89D272A0E176D0031EBBC /* MyFuckingPowerFilter.framework */; };
 		14B89D312A0E183C0031EBBC /* m.dat in Resources */ = {isa = PBXBuildFile; fileRef = 14B89D2B2A0E183C0031EBBC /* m.dat */; };
 		14B89D322A0E183C0031EBBC /* paramB in Resources */ = {isa = PBXBuildFile; fileRef = 14B89D2C2A0E183C0031EBBC /* paramB */; };
 		14B89D332A0E183C0031EBBC /* license in Resources */ = {isa = PBXBuildFile; fileRef = 14B89D2D2A0E183C0031EBBC /* license */; };
@@ -38,13 +37,12 @@
 		14B89D1D2A0E15F50031EBBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B89D1F2A0E15F50031EBBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14B89D202A0E15F50031EBBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14B89D272A0E176D0031EBBC /* MyFuckingPowerFilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFuckingPowerFilter.framework; sourceTree = "<group>"; };
 		14B89D292A0E17CA0031EBBC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		14B89D2B2A0E183C0031EBBC /* m.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = m.dat; sourceTree = "<group>"; };
-		14B89D2C2A0E183C0031EBBC /* paramB */ = {isa = PBXFileReference; lastKnownFileType = file; path = paramB; sourceTree = "<group>"; };
+		14B89D2C2A0E183C0031EBBC /* paramB */ = {isa = PBXFileReference; lastKnownFileType = text; path = paramB; sourceTree = "<group>"; };
 		14B89D2D2A0E183C0031EBBC /* license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
-		14B89D2E2A0E183C0031EBBC /* paramC */ = {isa = PBXFileReference; lastKnownFileType = file; path = paramC; sourceTree = "<group>"; };
-		14B89D2F2A0E183C0031EBBC /* paramA */ = {isa = PBXFileReference; lastKnownFileType = file; path = paramA; sourceTree = "<group>"; };
+		14B89D2E2A0E183C0031EBBC /* paramC */ = {isa = PBXFileReference; lastKnownFileType = text; path = paramC; sourceTree = "<group>"; };
+		14B89D2F2A0E183C0031EBBC /* paramA */ = {isa = PBXFileReference; lastKnownFileType = text; path = paramA; sourceTree = "<group>"; };
 		14B89D302A0E183C0031EBBC /* f.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = f.dat; sourceTree = "<group>"; };
 		3EF2F4D490FDA5A315E1A78C /* Pods-DBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDemo.debug.xcconfig"; path = "Target Support Files/Pods-DBDemo/Pods-DBDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A516F86FEAE14A096E30D2 /* Pods_DBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +55,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B89D372A0E185C0031EBBC /* libc++.tbd in Frameworks */,
-				14B89D282A0E176D0031EBBC /* MyFuckingPowerFilter.framework in Frameworks */,
 				CDEB067A35DD8437FE3F5BDB /* Pods_DBDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				14B89D2A2A0E183C0031EBBC /* Resources */,
-				14B89D272A0E176D0031EBBC /* MyFuckingPowerFilter.framework */,
 				14B89D0E2A0E15F30031EBBC /* AppDelegate.h */,
 				14B89D0F2A0E15F30031EBBC /* AppDelegate.m */,
 				14B89D112A0E15F30031EBBC /* SceneDelegate.h */,
